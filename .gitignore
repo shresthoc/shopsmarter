@@ -1,0 +1,5 @@
+venv/
+.venv/
+faiss_env/
+__pycache__/
+*.py[cod]

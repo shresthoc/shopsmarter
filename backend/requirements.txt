@@ -1,0 +1,40 @@
+Flask==3.0.3
+flask-cors==4.0.0
+python-dotenv==1.0.1
+
+# Image Processing & Computer Vision
+pillow==10.3.0
+torch==2.3.0 # Or your CUDA-specific version e.g., torch==2.2.1+cu118
+transformers[torch]==4.41.1 # For BLIP and potentially other LLM tasks
+open_clip_torch==2.24.0 # For CLIP embeddings
+faiss-cpu==1.7.4 # Or faiss-gpu if you have a compatible GPU and setup
+
+# Web Scraping & HTTP Requests
+requests==2.32.3
+beautifulsoup4==4.12.3
+webdriver-manager==4.0.1 # For Selenium WebDriver management if you re-enable Selenium
+# selenium==4.18.1 # Uncomment if you re-add Selenium as a fallback in search_and_scrape.py
+
+# Optional, but good for development
+ipython # For interactive debugging
+
+# Numerical operations
+numpy==1.26.4
+
+# Google API
+google-api-python-client==2.129.0
+
+# Machine Learning Utilities
+scikit-learn==1.5.0
+
+# For RefinementService (LLM & NLP)
+langchain==0.1.20
+huggingface_hub==0.23.0
+spacy==3.7.5
+# Required by spacy model en_core_web_sm: python -m spacy download en_core_web_sm
+
+# For Langchain PydanticOutputParser
+pydantic==1.10.13 # Pinning to v1 as Langchain has issues with v2 sometimes
+
+# For Pillow image format support
+olefile==0.47 
